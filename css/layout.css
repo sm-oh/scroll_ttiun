@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* 레이이아웃 서식 header, main, footer 공통 서식 */
+/* html{
+    scroll-behavior: smooth;
+} */
+
+/* 헤더 서식 */
+header{
+    width: 100%;height: 70px;
+    position: fixed;top: 0px;left: 0px;
+    z-index: 1000;
+}
+header:hover{
+    background: rgba(255, 255, 255, 0.8);
+}
+/* 세로스크롤값이 1100px이상일 경우 header배경색 적용 */
+.act{background: rgba(255, 255, 255, 0.8) Im !important;}
+header > h1 {
+    padding: 30px 25px 2%;
+}
+header i.fas{
+    position: absolute;
+    top: 24px;
+    font-size: 1.6rem;
+    color: var(--t-color02);
+}
+header i.fa-user{right: 4%;}
+header i.fa-bell{right: 2%;}
+header nav{
+    width: 600px;
+    margin: -58px auto 0px auto;
+    /* position: absolute;
+    left: 50px;transform: translateX(-50%); */
+}
+header .gnb{
+    display: flex;
+    justify-content: space-around;
+}
+header .gnb > li > a{
+    font-size: 1.2rem;
+    color: var(--t-color02);
+}
+
+/* 메인 내비게이션 서식 */
+#m_nav{}
+
+
+/* 푸터 서식 */
+footer{
+    background: #1c1a1b;
+    width: 100%;
+    padding: 40px 0px;
+    /* display: inline-block; */
+    height: 100px;
+}
+/* float해제
+footer::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+ */
+.f_inner{
+    width: 1200px;
+    margin: 0px auto;
+}
+footer h2{
+    float: left;
+    padding-top: 10px;
+    width: 150px;height: 60px;
+}
+.f_lnb, address{
+    width: 1000px;float: left;
+}
+.f_lnb ul{
+    display: flex;
+    padding-top: 15px;
+}
+.f_lnb ul a {
+    color:#ccc;
+    border-right: 1px solid #ccc;
+    padding: 0px 20px;
+}
+.f_lnb ul li:nth-child(2) a{
+    color:var(--t-color02);
+}
+.f_lnb ul li:last-child a{border: none;}
+footer address{
+    padding-top: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    color: var(--t-color02);
+}
+footer address dl {
+
+}
+footer address dt {display: inline-block;}
+footer address dd {display: inline-block;}
+footer address p {}

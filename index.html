@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>식물생활가전 틔운</title>
+  <!-- 초기화 -->
+  <link href="./css/reset.css" type="text/css" rel="stylesheet">
+
+  <!-- 기본, 공통서식 -->
+  <link href="./css/base.css" type="text/css" rel="stylesheet">
+
+    <!-- 레이아웃서식 -->
+    <link href="./css/layout.css" type="text/css" rel="stylesheet">
+
+  <!-- 메인서식 -->
+  <link href="./css/main.css" type="text/css" rel="stylesheet">
+
+  <!-- 스와이퍼 슬라이드 서식 -->
+  <link href="./css/swiper.css" type="text/css" rel="stylesheet" >
+
+  <!-- 아이콘폰트 주소 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <!-- css3속성 사용시 접두사 자동으로 붙여주는 스크립트 소스 -->
+  <script src="./script/prefixfree.min.js"></script>
+  
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+  <!-- 제이쿼리 ui라이브러리 -->
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+  <!-- 제이쿼리 쿠키파일 -->
+  <script src="./script/jquery.cookie.js"></script>
+
+  <!-- 제이쿼리 공통 스크립트 -->
+  <script src="./script/layout.js"></script>
+  
+  <!-- 콘텐츠 스크립트 -->
+  <script src="./script/main.js"></script>
+</head>
+<body>
+  <!-- 헤더영역 시작 -->
+  <header>
+    <h1>
+      <a href="index.html" title="메인페이지로 바로가기">
+          <img src="./images/lg_logo.svg" alt="상단로고">
+      </a>
+    </h1>
+
+  <!-- 상단 내비게이션 -->
+    <nav>
+      <ul class="gnb">
+        <li><a href="#intro" title="소개">소개</a></li>
+        <li><a href="#uses" title="활용">활용</a></li>
+        <li><a href="#detail" title="제품상세">제품상세</a></li>
+        <li><a href="#ttiun" title="틔운라이프">틔운라이프</a></li>
+        <li><a href="#plant" title="플랜테리어">플랜테리어</a></li>
+      </ul>
+    </nav>
+
+    <i class="fas fa-user"></i><!--로그인 아이콘-->
+    <i class="fas fa-bell"></i><!--알람 아이콘-->
+  </header>
+
+  <!-- 메인영역 시작 -->
+  <main>
+    <section id="main_intro">
+      <!-- <h2>틔운 인트로 영상콘텐츠</h2> -->
+      <article>
+        <h3>TTIUN</h3>
+        <p>새로운 라이프 스타일을 틔우다</p>
+        <a href="#" title="LG 틔운 미니 선물 포장 패키지">LG 틔운 미니 선물 포장 패키지</a>
+        <a href="#" title="새로운 씨앗키트 패키지">새로운 씨앗키트 패키지</a>
+        <a href="#" title="LG ThinQ 앱">LG ThinQ 앱</a>
+      </article>
+      <video autoplay muted loop='infinite'>
+        <source src="./media/tiiunmini-basicguide.webm" type="video/webm">
+      </video>
+      <a href="#" title="아래로 이동" class="next_btn">next_btn</a>
+    </section>
+
+    <section id="intro">
+      <h2>내 삶에 초록색이 필요할때</h2>
+      <i class="fas fa-arrow-left-long"></i>
+      <i class="fas fa-arrow-right-long"></i>
+
+      <div class="s_box">
+      <ul class="slideshow-container">
+        <li class="mySlides">
+          <img src="images/intro01.jpg" alt="">
+        </li>
+        <li class="mySlides">
+          <img src="images/intro02.jpg" alt="intro img">
+        </li>
+        <li class="mySlides">
+          <img src="images/intro03.jpg" alt="intro img">
+        </li>
+        <li class="mySlides">
+          <img src="images/intro04.jpg" alt="intro img">
+        </li>
+        <li class="mySlides">
+          <img src="images/intro05.jpg" alt="intro img">
+        </li;>
+      </ul>
+    </div>
+    </section>
+
+    <section id="uses">
+      <!-- <h2>활용</h2> -->
+      <ul>
+        <li>
+          <a href="#" title="갓 딴 신선한 채소를 바로 식탁에서">갓 딴 신선한 채소를<br>바로 식탁에서</a>
+          <img src="./images/use01.jpg" alt="">
+        </li>
+
+        <li>
+          <a href="#" title="하루 중 가장 긴 시간을 보내는 공간을 더 생기 있게">하루 중 가장 긴 시간을 보내는<br>공간을 더 생기 있게</a>
+          <img src="./images/use02.jpg" alt="">
+        </li>
+
+        <li>
+          <a href="#" title="소중한 사람에게 ">소중한 사람에게<br> 틔운을 선물해 보세요</a>
+          <img src="./images/use03.jpg" alt="">
+        </li>
+      </ul>
+    </section>
+
+    <section id="detail">
+      <!-- <h2>제품상세</h2> -->
+      <div class="flex-container">
+        <ul class="flex-slide shine">
+          <li>
+            <a href="#" title="빛 높이 조절">빛 높이 조절</a>
+            <video autoplay muted loop='infinite'>
+              <source src="./media/detail01.webm" type="video/webm">
+            </video>
+          </li>
+          <li>
+            <a href="#" title="온도 상태 알림">온도 상태 알림</a>
+            <video autoplay muted loop='infinite'>
+              <source src="./media/detail02.webm" type="video/webm">
+            </video>
+          </li>
+          <li>
+            <a href="#" title="물부족 알림">물부족 알림</a>
+            <video autoplay muted loop='infinite'>
+              <source src="./media/detail03.webm" type="video/webm">
+            </video>
+          </li>
+          <li>
+            <a href="#" title="조명 밝기 변화">조명 밝기 변화</a>
+            <video autoplay muted loop='infinite'>
+              <source src="./media/detail04.webm" type="video/webm">
+            </video>
+          </li>
+        </ul>
+        </div>
+    </section>
+
+    <section id="ttiun">
+      <div class="slide">
+        <div class="s_wrap">
+          <img src="./images/life01.jpg" alt="">
+          <img src="./images/life02.jpg" alt="">
+          <img src="./images/life03.jpg" alt="">
+        </div>
+        <ul class="ctrl_btn">
+          <li class="on">&nbsp;</li>
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+        </ul>
+      </div>
+      <p>
+        <span>싱그러운 생기를<br>
+        불어넣어 줄 틔운 라이프</span><br>
+        갓 따서 갓 먹는<br>
+        신선한 초록 채소<br>
+        멀리서 오는 채소 대신 틔운을 열어<br>
+        가장 맛있는 채소를 수확하세요.<br>
+        직접 키운 건강하고 신선한 채소를<br>
+        바로 즐길 수 있습니다.<br>
+      </p>
+    </section>
+
+    <section id="plant">
+      <p>
+        <span>플랜테리어</span><br>
+        인테리어 중에서도 최근 인기가 많은 방식은<br>
+        바로 ‘플랜테리어 (플랜트+인테리어)’입니다.<br>
+        사람들이 식물을 키울 때 ‘관리가 어렵다’라고 답했습니다.<br> 
+        LG 틔운(LG tiiun),<br>
+        자연 그대로를 담아 손쉽게 식물을 키울 수 있습니다.
+      </p>
+      <div class="slide">
+        <div class="slide_wrap">
+          <img src="./images/plant01.jpg" alt="">
+          <img src="./images/plant02.jpg" alt="">
+          <img src="./images/plant03.jpg" alt="">
+        </div>
+        <ul class="c_btn">
+          <li class="on1">&nbsp;</li>
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+        </ul>
+      </div>
+
+    </section>
+    
+    <div id="banner"></div>
+
+  </main>
+
+  <!-- 푸터영역시작 -->
+  <footer>
+    <div class="f_inner">
+    <h2>
+      <a href="index.html" title="하단로고">
+        <img src="./images/lg_logo.svg"alt="하단로고">
+      </a>
+    </h2>
+      <nav class="f_lnb">
+        <ul>
+          <li><a href="#" title="이용약관">이용약관</a></li>
+          <li><a href="#" title="개인정보 처리방침">개인정보 처리방침</a></li>
+          <li><a href="#" title="저작권안내">저작권안내</a></li>
+          <li><a href="#" title="공동인증서 안내">공동인증서 안내</a></li>
+          <li><a href="#" title="LG전자 홈페이지">LG전자 홈페이지</a></li>
+        </ul>
+      </nav>
+      
+      <address>
+        <dl>
+          <dt>사업자등록번호 : </dt>
+          <dd>107-86-14075</dd>
+          <dt>통신판매업신고번호 : </dt>
+          <dd>2022-012345</dd>
+          <dt>대표이사 : </dt>
+          <dd>조주완, 배두용</dd>
+          <dt>주소 : </dt>
+          <dd>서울시 영등포구 여의대로 128 LG트윈타워</dd>
+          <dt>호스팅 서비스 제공 : </dt>
+          <dd>LG전자(주)</dd>
+        </dl>
+        <p>Copyright © 2022 LG Electronics. All Rights Reserved.</p>
+      </address>
+    </div>
+  </footer>
+
+  <!-- 스와이퍼 슬라이드 서식 -->
+
+
+</body>
+</html>
